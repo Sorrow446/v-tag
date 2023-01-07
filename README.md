@@ -1,6 +1,17 @@
 # v-tag
 Audio tag library written in V.
 
+
+## Contributors
+It's stable and tested, but currently only supports reading FLAC & ID3.
+This is a solo project, so any contributors to help improve or implement read and write support for other formats would be appreciated. 
+
+## Setup
+`v install Sorrow446.tag`
+```v
+import sorrow446.tag
+```
+
 ## Supported
 |Format|Info|
 | --- | --- |
