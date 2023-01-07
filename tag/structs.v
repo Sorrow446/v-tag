@@ -22,6 +22,7 @@ pub struct FLACMeta {
 		date string
 		encoder string
 		isrc string
+		lyrics string
 		media_type string
 		performer string
 		publisher string
@@ -33,9 +34,9 @@ pub struct FLACMeta {
 		disk_number int
 		disk_total int
 		explicit int
+		has_covers bool
 		itunes_advisory int
 		length int
-		has_covers bool
 		track_number int
 		track_total int
 		year int

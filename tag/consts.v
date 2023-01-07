@@ -14,6 +14,7 @@ pub const (
 		'isrc': 'isrc',
 		'itunesadvisory': 'itunes_advisory',
 		'label': 'label',
+		'lyrics': 'lyrics',
 		'performer': 'performer',
 		'publisher': 'publisher',
 		'title': 'title',
