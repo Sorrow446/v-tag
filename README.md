@@ -7,8 +7,9 @@ It's stable and tested, but currently only supports reading FLAC & ID3.
 This is a solo project, so any contributors to help improve or implement read and write support for other formats would be appreciated. 
 
 ## Setup
+`v install Sorrow446.vtag`
 ```v
-import tag
+import sorrow446.vtag
 ```
 
 ## Supported
@@ -20,14 +21,14 @@ import tag
 ## Examples
 #### Read album title
 ```v
-	tags := tag.read_flac('1.flac') or {
+	tags := vtag.read_flac('1.flac') or {
 		panic(err)
 	}
 	println(tags.album)
 ```
 #### Extract all covers and save them locally
 ```v
-	tags := tag.read_id3('1.mp3') or {
+	tags := vtag.read_id3('1.mp3') or {
 		panic(err)
 	}
 	if tags.has_covers {
