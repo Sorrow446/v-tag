@@ -1,5 +1,5 @@
 Module {
-	name: 'vtag'
+	name: 'v-tag'
 	description: 'Audio tag library.'
 	version: '0.0.1'
 	license: 'MIT'
