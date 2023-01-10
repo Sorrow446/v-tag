@@ -210,7 +210,7 @@ fn seek_to_ilst(mut f os.File) !u32 {
 
 pub fn read_mp4(mp4Path string) !&MP4Meta {
 	mut f := os.open_file(mp4Path, 'rb', 0o755) or {
-		panic(err)
+		return err
 	}
 	defer {
 		f.close()
@@ -262,7 +262,7 @@ pub fn read_mp4(mp4Path string) !&MP4Meta {
 			break
 		}
 		f.seek(4, .current) or {
-			panic(err)
+			return err
 		}
 	}
 	return parsed
