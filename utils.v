@@ -17,6 +17,12 @@ fn read_le_u32(mut f os.File) !u32 {
 	return binary.little_endian_u32(buf)
 }
 
+fn read_be_u16(mut f os.File) !u16 {
+	mut buf := []u8{len: 2}
+	f.read(mut buf)!
+	return binary.big_endian_u16(buf)
+}
+
 fn read_be_u32(mut f os.File) !u32 {
 	mut buf := []u8{len: 4}
 	f.read(mut buf)!
