@@ -59,7 +59,7 @@ pub struct FLACMeta {
 		title string
 	pub mut:
 		compilation int
-		covers []FLACCover
+		covers []&FLACCover
 		custom map[string]string
 		disk_number int
 		disk_total int
