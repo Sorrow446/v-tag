@@ -1,5 +1,6 @@
 # v-tag
-Audio tag library written in V.
+Audio tag library written in V.    
+v-tag will be split into formats (see [v-flactag](https://github.com/Sorrow446/v-flactag) for write support).
 
 ## Contributors
 This is a solo project, so any contributors to help improve or implement read and write support for other formats would be appreciated. 
